@@ -1,0 +1,28 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.brahvim.college_assignments.app-mergeDebugResources-2:/values-v23/values-v23.xml",
+            "map": [
+                {
+                    "source": "/home/brahvim/Documents/Code/Android/College-Android-Assignments/App/app/src/main/res/values-v23/themes.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "1",
+                        "startOffsets": "62",
+                        "endLines": "7",
+                        "endColumns": "9",
+                        "endOffsets": "411"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "7",
+                        "endColumns": "9",
+                        "endOffsets": "354"
+                    }
+                }
+            ]
+        }
+    ]
+}

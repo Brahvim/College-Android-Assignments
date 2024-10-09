@@ -1,0 +1,86 @@
+[
+    {
+        "merged": "/home/brahvim/.gradle/daemon/8.0/com.brahvim.college_assignments.app-merged_res-4:/layout_content_main.xml.flat",
+        "source": "/home/brahvim/.gradle/daemon/8.0/com.brahvim.college_assignments.app-main-6:/layout/content_main.xml"
+    },
+    {
+        "merged": "/home/brahvim/.gradle/daemon/8.0/com.brahvim.college_assignments.app-merged_res-4:/layout_activity_main.xml.flat",
+        "source": "/home/brahvim/.gradle/daemon/8.0/com.brahvim.college_assignments.app-main-6:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/home/brahvim/.gradle/daemon/8.0/com.brahvim.college_assignments.app-merged_res-4:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "/home/brahvim/.gradle/daemon/8.0/com.brahvim.college_assignments.app-pngs-0:/drawable-anydpi-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "/home/brahvim/.gradle/daemon/8.0/com.brahvim.college_assignments.app-merged_res-4:/layout_fragment_first.xml.flat",
+        "source": "/home/brahvim/.gradle/daemon/8.0/com.brahvim.college_assignments.app-main-6:/layout/fragment_first.xml"
+    },
+    {
+        "merged": "/home/brahvim/.gradle/daemon/8.0/com.brahvim.college_assignments.app-merged_res-4:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "/home/brahvim/.gradle/daemon/8.0/com.brahvim.college_assignments.app-main-6:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/home/brahvim/.gradle/daemon/8.0/com.brahvim.college_assignments.app-merged_res-4:/layout_fragment_second.xml.flat",
+        "source": "/home/brahvim/.gradle/daemon/8.0/com.brahvim.college_assignments.app-main-6:/layout/fragment_second.xml"
+    },
+    {
+        "merged": "/home/brahvim/.gradle/daemon/8.0/com.brahvim.college_assignments.app-merged_res-4:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "/home/brahvim/.gradle/daemon/8.0/com.brahvim.college_assignments.app-main-6:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/home/brahvim/.gradle/daemon/8.0/com.brahvim.college_assignments.app-merged_res-4:/xml_data_extraction_rules.xml.flat",
+        "source": "/home/brahvim/.gradle/daemon/8.0/com.brahvim.college_assignments.app-main-6:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "/home/brahvim/.gradle/daemon/8.0/com.brahvim.college_assignments.app-merged_res-4:/navigation_nav_graph.xml.flat",
+        "source": "/home/brahvim/.gradle/daemon/8.0/com.brahvim.college_assignments.app-main-6:/navigation/nav_graph.xml"
+    },
+    {
+        "merged": "/home/brahvim/.gradle/daemon/8.0/com.brahvim.college_assignments.app-merged_res-4:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/home/brahvim/.gradle/daemon/8.0/com.brahvim.college_assignments.app-main-6:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/home/brahvim/.gradle/daemon/8.0/com.brahvim.college_assignments.app-merged_res-4:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "/home/brahvim/.gradle/daemon/8.0/com.brahvim.college_assignments.app-main-6:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/home/brahvim/.gradle/daemon/8.0/com.brahvim.college_assignments.app-merged_res-4:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/home/brahvim/.gradle/daemon/8.0/com.brahvim.college_assignments.app-main-6:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/home/brahvim/.gradle/daemon/8.0/com.brahvim.college_assignments.app-merged_res-4:/xml_backup_rules.xml.flat",
+        "source": "/home/brahvim/.gradle/daemon/8.0/com.brahvim.college_assignments.app-main-6:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "/home/brahvim/.gradle/daemon/8.0/com.brahvim.college_assignments.app-merged_res-4:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "/home/brahvim/.gradle/daemon/8.0/com.brahvim.college_assignments.app-main-6:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/home/brahvim/.gradle/daemon/8.0/com.brahvim.college_assignments.app-merged_res-4:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "/home/brahvim/.gradle/daemon/8.0/com.brahvim.college_assignments.app-main-6:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/home/brahvim/.gradle/daemon/8.0/com.brahvim.college_assignments.app-merged_res-4:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "/home/brahvim/.gradle/daemon/8.0/com.brahvim.college_assignments.app-main-6:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/home/brahvim/.gradle/daemon/8.0/com.brahvim.college_assignments.app-merged_res-4:/drawable_ic_launcher_background.xml.flat",
+        "source": "/home/brahvim/.gradle/daemon/8.0/com.brahvim.college_assignments.app-main-6:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "/home/brahvim/.gradle/daemon/8.0/com.brahvim.college_assignments.app-merged_res-4:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "/home/brahvim/.gradle/daemon/8.0/com.brahvim.college_assignments.app-main-6:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/home/brahvim/.gradle/daemon/8.0/com.brahvim.college_assignments.app-merged_res-4:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "/home/brahvim/.gradle/daemon/8.0/com.brahvim.college_assignments.app-main-6:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/home/brahvim/.gradle/daemon/8.0/com.brahvim.college_assignments.app-merged_res-4:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "/home/brahvim/.gradle/daemon/8.0/com.brahvim.college_assignments.app-main-6:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/home/brahvim/.gradle/daemon/8.0/com.brahvim.college_assignments.app-merged_res-4:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "/home/brahvim/.gradle/daemon/8.0/com.brahvim.college_assignments.app-main-6:/mipmap-xhdpi/ic_launcher.webp"
+    }
+]
