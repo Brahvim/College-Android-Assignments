@@ -13,13 +13,13 @@
 			android:label="@string/app_name"
 			android:supportsRtl="true"
 			android:allowBackup="true"
-			android:name=".CollegeApp"
+			android:name=".AppCollege"
 			tools:targetApi="31"
 			>
 		
 		<activity
 				android:exported="true"
-				android:name=".MainActivity"
+				android:name=".ActivityMain"
 				>
 			
 			<intent-filter>

@@ -1,5 +1,10 @@
 <resources>
 	
 	<string name="app_name">App</string>
+	<string name="textFragmentOneNameFragmentNameActivityMain">Fragment 1</string>
+	<string name="textFragmentTwoNameFragmentNameActivityMain">Fragment 2</string>
+	
+	<string name="textButtonSwitchTargetOneFragmentTwoActivityMain">Click to go to <i>Fragment 1</i>.</string>
+	<string name="textButtonSwitchTargetTwoFragmentTwoActivityMain">Click to go to <i>Fragment 2</i>.</string>
 
 </resources>
