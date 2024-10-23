@@ -1,0 +1,6 @@
+// This is a "top-level build file" to add config options for all sub-projects and/or modules.
+plugins {
+
+	id 'com.android.application' version '8.1.0' apply false
+
+}

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:id="@+id/linearLayout"
+		>
+	
+	<TextView
+			android:text="@string/textButtonZeroGridLayoutCalculatorButtonsActivityMain"
+			android:id="@+id/textViewCalculatorResult"
+			android:layout_height="240dp"
+			android:textIsSelectable="true"
+			android:textAllCaps="false"
+			android:layout_width="match_parent"
+			android:focusable="true"
+			android:textSize="48sp"
+			android:gravity="center"
+			/>
+	
+	<TableLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+		
+		<TableRow
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:gravity="center">
+			
+			<Button
+					android:layout_width="26dp"
+					android:layout_height="wrap_content"
+					style="?android:attr/buttonBarButtonStyle"
+					android:id="@+id/buttonCalculatorControlClearEntry"
+					android:text="@string/textButtonClearEntryGridLayoutCalculatorButtonsActivityMain"
+					/>
+			
+			<Button
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					style="?android:attr/buttonBarButtonStyle"
+					android:id="@+id/buttonCalculatorControlDelete"
+					android:text="@string/textButtonDeleteGridLayoutCalculatorButtonsActivityMain"
+					/>
+			
+			<Button
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					style="?android:attr/buttonBarButtonStyle"
+					android:id="@+id/buttonCalculatorControlClear"
+					android:text="@string/textButtonClearGridLayoutCalculatorButtonsActivityMain"
+					/>
+			
+			<Button
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					style="?android:attr/buttonBarButtonStyle"
+					android:id="@+id/buttonCalculatorOperationAdd"
+					android:text="@string/textButtonAddGridLayoutCalculatorButtonsActivityMain"
+					/>
+		</TableRow>
+		
+		<TableRow
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:gravity="center">
+			
+			<Button
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					style="?android:attr/buttonBarButtonStyle"
+					android:id="@+id/buttonCalculatorNumberOne"
+					android:text="@string/textButtonOneGridLayoutCalculatorButtonsActivityMain"
+					/>
+			
+			<Button
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					style="?android:attr/buttonBarButtonStyle"
+					android:id="@+id/buttonCalculatorNumberTwo"
+					android:text="@string/textButtonTwoGridLayoutCalculatorButtonsActivityMain"
+					/>
+			
+			<Button
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					style="?android:attr/buttonBarButtonStyle"
+					android:id="@+id/buttonCalculatorNumberThree"
+					android:text="@string/textButtonThreeGridLayoutCalculatorButtonsActivityMain"
+					/>
+			
+			<Button
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					style="?android:attr/buttonBarButtonStyle"
+					android:id="@+id/buttonCalculatorOperationSubtract"
+					android:text="@string/textButtonSubtractGridLayoutCalculatorButtonsActivityMain"
+					/>
+		</TableRow>
+		
+		<TableRow
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:gravity="center">
+			
+			<Button
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					style="?android:attr/buttonBarButtonStyle"
+					android:id="@+id/buttonCalculatorNumberFour"
+					android:text="@string/textButtonFourGridLayoutCalculatorButtonsActivityMain"
+					/>
+			
+			<Button
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					style="?android:attr/buttonBarButtonStyle"
+					android:id="@+id/buttonCalculatorNumberFive"
+					android:text="@string/textButtonFiveGridLayoutCalculatorButtonsActivityMain"
+					/>
+			
+			<Button
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					style="?android:attr/buttonBarButtonStyle"
+					android:id="@+id/buttonCalculatorNumberSix"
+					android:text="@string/textButtonSixGridLayoutCalculatorButtonsActivityMain"
+					/>
+			
+			<Button
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					style="?android:attr/buttonBarButtonStyle"
+					android:id="@+id/buttonCalculatorOperationMultiply"
+					android:text="@string/textButtonMultiplyGridLayoutCalculatorButtonsActivityMain"
+					/>
+		</TableRow>
+		
+		<TableRow
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:gravity="center">
+			
+			<Button
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					style="?android:attr/buttonBarButtonStyle"
+					android:id="@+id/buttonCalculatorNumberSeven"
+					android:text="@string/textButtonSevenGridLayoutCalculatorButtonsActivityMain"
+					/>
+			
+			<Button
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					style="?android:attr/buttonBarButtonStyle"
+					android:id="@+id/buttonCalculatorNumberEight"
+					android:text="@string/textButtonEightGridLayoutCalculatorButtonsActivityMain"
+					/>
+			
+			<Button
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					style="?android:attr/buttonBarButtonStyle"
+					android:id="@+id/buttonCalculatorNumberNine"
+					android:text="@string/textButtonNineGridLayoutCalculatorButtonsActivityMain"
+					/>
+			
+			<Button
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					style="?android:attr/buttonBarButtonStyle"
+					android:id="@+id/buttonCalculatorOperationDivide"
+					android:text="@string/textButtonDivideGridLayoutCalculatorButtonsActivityMain"
+					/>
+		</TableRow>
+		
+		<TableRow
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:gravity="center">
+			
+			<Button
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					style="?android:attr/buttonBarButtonStyle"
+					android:id="@+id/buttonCalculatorNumberZero"
+					android:text="@string/textButtonZeroGridLayoutCalculatorButtonsActivityMain"
+					/>
+			
+			<Button
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					style="?android:attr/buttonBarButtonStyle"
+					android:id="@+id/buttonCalculatorNumberDoubleZero"
+					android:text="@string/textButtonDoubleZeroGridLayoutCalculatorButtonsActivityMain"
+					/>
+			
+			<Button
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					style="?android:attr/buttonBarButtonStyle"
+					android:id="@+id/buttonCalculatorOperationEquals"
+					android:text="@string/textButtonEqualsGridLayoutCalculatorButtonsActivityMain"
+					/>
+		
+		</TableRow>
+	</TableLayout>
+
+</LinearLayout>
