@@ -1,0 +1,44 @@
+plugins {
+
+	id 'com.android.application'
+
+}
+
+android {
+
+	compileSdk 34
+	namespace 'com.brahvim.college_assignments'
+
+	defaultConfig {
+
+		minSdk 21 // noinspection EditedTargetSdkVersion
+		targetSdk 33
+		versionCode 1
+		versionName "1.0"
+		multiDexEnabled true
+		applicationId "com.brahvim.college_assignments"
+
+	}
+
+	buildTypes {
+
+		release {
+
+			minifyEnabled true
+
+		}
+
+	}
+
+	compileOptions {
+
+		sourceCompatibility JavaVersion.VERSION_1_8
+		targetCompatibility JavaVersion.VERSION_1_8
+
+	}
+
+}
+
+dependencies {
+
+}
