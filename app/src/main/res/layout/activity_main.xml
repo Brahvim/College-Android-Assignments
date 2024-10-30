@@ -7,11 +7,10 @@
 		>
 	
 	<fragment
-			android:layout_width="match_parent"
-			android:layout_height="match_parent"
+			android:name="com.brahvim.college_assignments.FragmentOne"
 			android:id="@+id/fragmentContainerActivityMain"
-			>
-	
-	</fragment>
+			android:layout_height="match_parent"
+			android:layout_width="match_parent"
+			/>
 
 </FrameLayout>

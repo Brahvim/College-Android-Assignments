@@ -15,15 +15,23 @@ android {
 		targetSdk 33
 		versionCode 1
 		versionName "1.0"
-		multiDexEnabled true
+//		multiDexEnabled true
 		applicationId "com.brahvim.college_assignments"
 
 	}
 
 	buildTypes {
 
+		debug {
+
+			minifyEnabled false
+			viewBinding { enabled = true }
+
+		}
+
 		release {
 
+			viewBinding { enabled = true }
 			minifyEnabled true
 
 		}
