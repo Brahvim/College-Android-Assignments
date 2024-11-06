@@ -1,6 +1,7 @@
 <resources>
 	
 	<string name="appName">App</string>
-	<string name="labelTextViewFileNameFragmentMain">(Tap To Open File)</string>
+	<string name="nameFileEditorContentTextEditorFragmentMain">txt</string>
+	<string name="hintEditTextEditorFragmentMain">This text goes to Internal Storage!</string>
 
 </resources>

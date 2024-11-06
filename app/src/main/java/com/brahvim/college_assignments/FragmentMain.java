@@ -1,18 +1,19 @@
 package com.brahvim.college_assignments;
 
 import android.app.Activity;
-import android.app.AlertDialog;
 import android.app.Fragment;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.EditText;
-import android.widget.LinearLayout;
 
 import com.brahvim.college_assignments.databinding.FragmentMainBinding;
+
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 
 @SuppressWarnings("deprecation")
 public class FragmentMain extends Fragment {
@@ -21,6 +22,7 @@ public class FragmentMain extends Fragment {
 
 	private Activity host;
 	private Context context;
+	private String filePath;
 	private FragmentMainBinding binding;
 
 	public FragmentMain() {
@@ -29,28 +31,53 @@ public class FragmentMain extends Fragment {
 
 	// region `Fragment`-lifecycle callbacks.
 	@Override
-	public View onCreateView(final LayoutInflater p_inflater, final ViewGroup p_parent, final Bundle p_saveState) {
-		if (p_parent != null) {
-			p_parent.removeAllViews();
+	public View onCreateView(final LayoutInflater p_inflater, final ViewGroup p_parentView, final Bundle p_saveState) {
+		if (p_parentView != null) {
+			p_parentView.removeAllViews();
 		}
 
 		this.host = super.getActivity();
 		this.context = this.host.getApplicationContext();
-		this.binding = FragmentMainBinding.inflate(p_inflater, p_parent, false);
+		this.binding = FragmentMainBinding.inflate(p_inflater, p_parentView, false);
+		this.filePath = super.getString(R.string.nameFileEditorContentTextEditorFragmentMain);
 
-		// return super.onCreateView(p_inflater, p_parent, p_saveState);
+		this.binding.editTextEditor.setText(this.loadFile());
+		// this.binding.editTextEditor.setOnEditorActionListener((TextView.OnEditorActionListener) (p_parentEditText, p_action, p_event) -> {
+		// 	// if (p_event != null) {
+		// 	// 	final int c = p_event.getUnicodeChar();
+		// 	//
+		// 	// 	if (c == '\n') {
+		// 	// 		this.saveFile(p_parentEditText.getText().toString());
+		// 	// 		return true;
+		// 	// 	}
+		// 	// }
+		// 	//
+		// 	// switch (p_action) {
+		// 	//
+		// 	// 	default: {
+		// 	// 	}
+		// 	// 	break;
+		// 	//
+		// 	// 	case EditorInfo.IME_ACTION_DONE: {
+		// 	// 		if (this.saveFile(p_parentEditText.getText().toString())) {
+		// 	// 			return true;
+		// 	// 		}
+		// 	// 	}
+		// 	// 	break;
+		// 	// }
+		//
+		// 	return false;
+		// });
+
+		// return super.onCreateView(p_inflater, p_parentView, p_saveState);
 		return this.binding.getRoot();
-	}
-
-	@Override
-	public void onStart() {
-		super.onStart();
-		// this.showFileSaveDialog();
 	}
 
 	@Override
 	public void onDestroy() {
 		super.onDestroy();
+
+		this.saveFile(this.binding.editTextEditor.getText().toString());
 
 		this.binding = null;
 		this.context = null;
@@ -58,37 +85,28 @@ public class FragmentMain extends Fragment {
 	}
 	// endregion
 
-	private void showFileSaveDialog() {
-		final EditText textEditorFileName = new EditText(this.context);
+	private String loadFile() {
+		try (final FileInputStream stream = this.context.openFileInput(this.filePath)) {
 
-		textEditorFileName.setLayoutParams(new LinearLayout.LayoutParams(
-		  ViewGroup.LayoutParams.MATCH_PARENT,
-		  ViewGroup.LayoutParams.WRAP_CONTENT
-		));
+			final byte[] textEncoded = new byte[stream.available()];
+			stream.read(textEncoded);
+			return new String(textEncoded, StandardCharsets.UTF_8);
 
-		final AlertDialog dialog = new AlertDialog.Builder(this.context)
-		  .setTitle("Save File")
-		  .setView(textEditorFileName)
-		  .setNegativeButton("Cancel", null)
-		  .setPositiveButton("Save", (p_dialog, p_clickedElement) -> {
+		} catch (final IOException e) {
+			return "";
+		}
+	}
 
-			  final String fileName = textEditorFileName.getText().toString();
+	private boolean saveFile(final String p_content) {
+		try (final FileOutputStream stream = this.context.openFileOutput(this.filePath, Context.MODE_PRIVATE)) {
 
-			  switch (p_clickedElement) {
+			stream.write(p_content.getBytes(StandardCharsets.UTF_8));
 
-				  default: {
-				  }
-				  break;
+		} catch (final IOException e) {
+			return false;
+		}
 
-				  case DialogInterface.BUTTON_POSITIVE: {
-				  }
-				  break;
-			  }
-
-		  })
-		  .create();
-
-		dialog.show();
+		return true;
 	}
 
 }
