@@ -18,16 +18,10 @@ import java.nio.charset.StandardCharsets;
 @SuppressWarnings("deprecation")
 public class FragmentMain extends Fragment {
 
-	public static String TAG = App.formTag(FragmentMain.class);
-
 	private Activity host;
 	private Context context;
 	private String filePath;
 	private FragmentMainBinding binding;
-
-	public FragmentMain() {
-		// This is required for inflating `Fragment`s, isn't it?
-	}
 
 	// region `Fragment`-lifecycle callbacks.
 	@Override
@@ -42,32 +36,6 @@ public class FragmentMain extends Fragment {
 		this.filePath = super.getString(R.string.nameFileEditorContentTextEditorFragmentMain);
 
 		this.binding.editTextEditor.setText(this.loadFile());
-		// this.binding.editTextEditor.setOnEditorActionListener((TextView.OnEditorActionListener) (p_parentEditText, p_action, p_event) -> {
-		// 	// if (p_event != null) {
-		// 	// 	final int c = p_event.getUnicodeChar();
-		// 	//
-		// 	// 	if (c == '\n') {
-		// 	// 		this.saveFile(p_parentEditText.getText().toString());
-		// 	// 		return true;
-		// 	// 	}
-		// 	// }
-		// 	//
-		// 	// switch (p_action) {
-		// 	//
-		// 	// 	default: {
-		// 	// 	}
-		// 	// 	break;
-		// 	//
-		// 	// 	case EditorInfo.IME_ACTION_DONE: {
-		// 	// 		if (this.saveFile(p_parentEditText.getText().toString())) {
-		// 	// 			return true;
-		// 	// 		}
-		// 	// 	}
-		// 	// 	break;
-		// 	// }
-		//
-		// 	return false;
-		// });
 
 		// return super.onCreateView(p_inflater, p_parentView, p_saveState);
 		return this.binding.getRoot();
@@ -79,6 +47,7 @@ public class FragmentMain extends Fragment {
 
 		this.saveFile(this.binding.editTextEditor.getText().toString());
 
+		this.filePath = null;
 		this.binding = null;
 		this.context = null;
 		this.host = null;
