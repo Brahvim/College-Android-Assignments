@@ -1,0 +1,7 @@
+// Top-level build file where to add configuration options to all Gradle *"sub-projects"* a.k.a. *modules* at once.
+
+plugins {
+
+	id 'com.android.application' version '8.1.0' apply false
+
+}
