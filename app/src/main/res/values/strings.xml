@@ -1,5 +1,6 @@
 <resources>
 	
-	<string name="app_name">App</string>
+	<string name="appName">App</string>
+	<string name="labelTextViewFileNameFragmentMain">(Tap To Open File)</string>
 
 </resources>

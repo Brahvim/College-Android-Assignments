@@ -7,7 +7,9 @@ plugins {
 android {
 
 	namespace 'com.brahvim.college_assignments'
+	viewBinding { enabled = true }
 	compileSdk 33
+
 
 	defaultConfig {
 
@@ -21,17 +23,9 @@ android {
 
 	buildTypes {
 
-		debug {
-
-			minifyEnabled false
-			viewBinding { enabled = true }
-
-		}
-
 		release {
 
 			minifyEnabled false
-			viewBinding { enabled = true }
 
 		}
 
