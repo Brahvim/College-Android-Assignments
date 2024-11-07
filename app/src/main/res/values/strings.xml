@@ -4,31 +4,31 @@
 	
 	<!-- region UI elements. -->
 	<!-- region Calculator symbol buttons.	-->
-	<string name="textButtonSubtractGridLayoutCalculatorButtonsActivityMain">-</string>
-	<string name="textButtonMultiplyGridLayoutCalculatorButtonsActivityMain">*</string>
-	<string name="textButtonDivideGridLayoutCalculatorButtonsActivityMain">/</string>
-	<string name="textButtonEqualsGridLayoutCalculatorButtonsActivityMain">=</string>
-	<string name="textButtonAddGridLayoutCalculatorButtonsActivityMain">+</string>
+	<string name="textButtonSubtractTableRowTableLayoutCalculatorButtonsActivityMain">-</string>
+	<string name="textButtonMultiplyTableRowTableLayoutCalculatorButtonsActivityMain">*</string>
+	<string name="textButtonDivideTableRowTableLayoutCalculatorButtonsActivityMain">/</string>
+	<string name="textButtonEqualsTableRowTableLayoutCalculatorButtonsActivityMain">=</string>
+	<string name="textButtonAddTableRowTableLayoutCalculatorButtonsActivityMain">+</string>
 	<!-- endregion -->
 	
 	<!-- region Calculator numeric buttons. -->
-	<string name="textButtonDoubleZeroGridLayoutCalculatorButtonsActivityMain">00</string>
-	<string name="textButtonThreeGridLayoutCalculatorButtonsActivityMain">3</string>
-	<string name="textButtonSevenGridLayoutCalculatorButtonsActivityMain">7</string>
-	<string name="textButtonEightGridLayoutCalculatorButtonsActivityMain">8</string>
-	<string name="textButtonFourGridLayoutCalculatorButtonsActivityMain">4</string>
-	<string name="textButtonFiveGridLayoutCalculatorButtonsActivityMain">5</string>
-	<string name="textButtonNineGridLayoutCalculatorButtonsActivityMain">9</string>
-	<string name="textButtonZeroGridLayoutCalculatorButtonsActivityMain">0</string>
-	<string name="textButtonOneGridLayoutCalculatorButtonsActivityMain">1</string>
-	<string name="textButtonTwoGridLayoutCalculatorButtonsActivityMain">2</string>
-	<string name="textButtonSixGridLayoutCalculatorButtonsActivityMain">6</string>
+	<string name="textButtonDoubleZeroTableRowTableLayoutCalculatorButtonsActivityMain">00</string>
+	<string name="textButtonThreeTableRowTableLayoutCalculatorButtonsActivityMain">3</string>
+	<string name="textButtonSevenTableRowTableLayoutCalculatorButtonsActivityMain">7</string>
+	<string name="textButtonEightTableRowTableLayoutCalculatorButtonsActivityMain">8</string>
+	<string name="textButtonFourTableRowTableLayoutCalculatorButtonsActivityMain">4</string>
+	<string name="textButtonFiveTableRowTableLayoutCalculatorButtonsActivityMain">5</string>
+	<string name="textButtonNineTableRowTableLayoutCalculatorButtonsActivityMain">9</string>
+	<string name="textButtonZeroTableRowTableLayoutCalculatorButtonsActivityMain">0</string>
+	<string name="textButtonOneTableRowTableLayoutCalculatorButtonsActivityMain">1</string>
+	<string name="textButtonTwoTableRowTableLayoutCalculatorButtonsActivityMain">2</string>
+	<string name="textButtonSixTableRowTableLayoutCalculatorButtonsActivityMain">6</string>
 	<!-- endregion -->
 	
 	<!-- region Calculator operation buttons. -->
-	<string name="textButtonClearEntryGridLayoutCalculatorButtonsActivityMain">CE</string>
-	<string name="textButtonDeleteGridLayoutCalculatorButtonsActivityMain">DELETE</string>
-	<string name="textButtonClearGridLayoutCalculatorButtonsActivityMain">CLEAR</string>
+	<string name="textButtonClearEntryTableRowTableLayoutCalculatorButtonsActivityMain">CE</string>
+	<string name="textButtonDeleteTableRowTableLayoutCalculatorButtonsActivityMain">DELETE</string>
+	<string name="textButtonClearTableRowTableLayoutCalculatorButtonsActivityMain">CLEAR</string>
 	<!-- endregion -->
 	<!-- endregion -->
 

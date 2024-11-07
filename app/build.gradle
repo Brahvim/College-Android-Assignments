@@ -6,8 +6,8 @@ plugins {
 
 android {
 
-	compileSdk 34
 	namespace 'com.brahvim.college_assignments'
+	compileSdk 34
 
 	defaultConfig {
 
@@ -36,9 +36,5 @@ android {
 		targetCompatibility JavaVersion.VERSION_1_8
 
 	}
-
-}
-
-dependencies {
 
 }

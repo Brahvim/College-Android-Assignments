@@ -6,22 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import java.text.NumberFormat;
-import java.util.Locale;
-
 public class MainActivity extends Activity {
-
-	public enum CalculatorOperation {
-
-		ADD(),
-
-		DIVIDE(),
-
-		SUBTRACT(),
-
-		MULTIPLY(),
-
-	}
 
 	// region Fields.
 	// region `static` fields.
@@ -46,30 +31,11 @@ public class MainActivity extends Activity {
 	  "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "00"
 
 	};
-
-	public static final int[] idsOperationButtonViewsCalculator = { // NOSONAR!
-
-	  R.id.buttonCalculatorOperationAdd,
-	  R.id.buttonCalculatorOperationDivide,
-	  R.id.buttonCalculatorOperationSubtract,
-	  R.id.buttonCalculatorOperationMultiply,
-
-	};
-
-	public static final int[] idsControlButtonViewsCalculator = { // NOSONAR!
-
-	  R.id.buttonCalculatorControlClear,
-	  R.id.buttonCalculatorControlDelete,
-	  R.id.buttonCalculatorControlClearEntry,
-
-	};
 	// endregion
 
 	public final Button[] viewsNumberedButtonViewsCalculator = new Button[idsNumberedButtonViewsCalculator.length];
 
-	public CalculatorOperation calculatorOperationCurrent;
-
-	public TextView textViewCalculatorResult; // NOSONAR! Data-oriented freedom!
+	private TextView textViewCalculatorResult;
 	// endregion
 
 	@Override
@@ -88,7 +54,7 @@ public class MainActivity extends Activity {
 	public void setupButtonsCalculatorControl() {
 		super
 		  .findViewById(R.id.buttonCalculatorControlClear)
-		  .setOnClickListener(p_view -> this.textViewCalculatorResult.setText(R.string.textButtonZeroGridLayoutCalculatorButtonsActivityMain));
+		  .setOnClickListener(p_view -> this.textViewCalculatorResult.setText(R.string.textButtonZeroTableRowTableLayoutCalculatorButtonsActivityMain));
 
 		super
 		  .findViewById(R.id.buttonCalculatorControlDelete)
@@ -99,12 +65,10 @@ public class MainActivity extends Activity {
 
 		super
 		  .findViewById(R.id.buttonCalculatorControlClearEntry)
-		  .setOnClickListener(p_view -> this.textViewCalculatorResult.setText(R.string.textButtonZeroGridLayoutCalculatorButtonsActivityMain));
+		  .setOnClickListener(p_view -> this.textViewCalculatorResult.setText(R.string.textButtonZeroTableRowTableLayoutCalculatorButtonsActivityMain));
 	}
 
 	public void setupButtonsCalculatorNumbered() {
-		final NumberFormat numberFormat = MainActivity.getCurrentLocaleNumberFormat();
-
 		for (int i = 0; i < this.viewsNumberedButtonViewsCalculator.length; ++i) {
 			final View v
 			  = this.viewsNumberedButtonViewsCalculator[i]
@@ -113,47 +77,41 @@ public class MainActivity extends Activity {
 			v.setTag(strTagsNumberedButtonViewsCalculator[i]);
 
 			v.setOnClickListener(p_view -> {
-				// `View::getText()` returns a `SpannableString` as a `CharSequence`.
-				String strInitialValue = this.textViewCalculatorResult.getText().toString();
-				final String strTag = (String) p_view.getTag();
 
-				if ("0".equals(strInitialValue)) { // Branch in frequent callback :(
-					strInitialValue = "";
+				// `View::getText()` returns a `SpannableString` as a `CharSequence`.
+				final String strInitialValue = this.textViewCalculatorResult.getText().toString();
+				final String strTag = (String) p_view.getTag();
+				String strNewValue = strInitialValue;
+
+				if ("NaN".equals(strInitialValue) || "0".equals(strInitialValue)) { // Branch in frequent callback :(
+					strNewValue = "";
 				}
 
-				this.textViewCalculatorResult.setText(strInitialValue + strTag);
+				this.textViewCalculatorResult.setText(strNewValue + strTag);
 			});
 		}
 	}
 
 	public void setupButtonsCalculatorOperations() {
 		super.findViewById(R.id.buttonCalculatorOperationAdd)
-			 .setOnClickListener(p_view -> {
-				 MainActivity.this.calculatorOperationCurrent = CalculatorOperation.ADD;
-				 String strInitialValue = MainActivity.this.textViewCalculatorResult.getText().toString();
-				 MainActivity.this.textViewCalculatorResult.setText(strInitialValue + " + ");
-			 });
+			 .setOnClickListener(p_view ->
+								   MainActivity.this.textViewCalculatorResult.setText(
+									 MainActivity.this.textViewCalculatorResult.getText().toString() + " + "));
 
 		super.findViewById(R.id.buttonCalculatorOperationDivide)
-			 .setOnClickListener(p_view -> {
-				 MainActivity.this.calculatorOperationCurrent = CalculatorOperation.DIVIDE;
-				 String strInitialValue = MainActivity.this.textViewCalculatorResult.getText().toString();
-				 MainActivity.this.textViewCalculatorResult.setText(strInitialValue + " / ");
-			 });
+			 .setOnClickListener(p_view ->
+								   MainActivity.this.textViewCalculatorResult.setText(
+									 MainActivity.this.textViewCalculatorResult.getText().toString() + " / "));
 
 		super.findViewById(R.id.buttonCalculatorOperationSubtract)
-			 .setOnClickListener(p_view -> {
-				 MainActivity.this.calculatorOperationCurrent = CalculatorOperation.SUBTRACT;
-				 String strInitialValue = MainActivity.this.textViewCalculatorResult.getText().toString();
-				 MainActivity.this.textViewCalculatorResult.setText(strInitialValue + " - ");
-			 });
+			 .setOnClickListener(p_view ->
+								   MainActivity.this.textViewCalculatorResult.setText(
+									 MainActivity.this.textViewCalculatorResult.getText().toString() + " - "));
 
 		super.findViewById(R.id.buttonCalculatorOperationMultiply)
-			 .setOnClickListener(p_view -> {
-				 MainActivity.this.calculatorOperationCurrent = CalculatorOperation.MULTIPLY;
-				 String strInitialValue = MainActivity.this.textViewCalculatorResult.getText().toString();
-				 MainActivity.this.textViewCalculatorResult.setText(strInitialValue + " * ");
-			 });
+			 .setOnClickListener(p_view ->
+								   MainActivity.this.textViewCalculatorResult.setText(
+									 MainActivity.this.textViewCalculatorResult.getText().toString() + " * "));
 
 		super.findViewById(R.id.buttonCalculatorOperationEquals)
 			 .setOnClickListener(p_view -> {
@@ -213,6 +171,7 @@ public class MainActivity extends Activity {
 					 break;
 
 					 default: {
+						 // NOSONAR!
 					 }
 					 break;
 
@@ -220,10 +179,6 @@ public class MainActivity extends Activity {
 
 				 MainActivity.this.textViewCalculatorResult.setText(result);
 			 });
-	}
-
-	public static NumberFormat getCurrentLocaleNumberFormat() {
-		return NumberFormat.getInstance(Locale.getDefault());
 	}
 
 }

@@ -13,7 +13,7 @@
 			android:id="@+id/textViewCalculatorResult"
 			android:layout_width="match_parent"
 			android:textIsSelectable="true"
-			android:layout_height="240dp"
+			android:layout_height="103dp"
 			android:textAllCaps="false"
 			android:focusable="true"
 			android:gravity="center"
