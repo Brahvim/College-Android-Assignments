@@ -7,5 +7,12 @@
 		android:layout_width="match_parent"
 		tools:context=".ActivityMain"
 		>
+	
+	<fragment
+			android:name="com.brahvim.college_assignments.FragmentMain"
+			android:layout_height="match_parent"
+			android:layout_width="match_parent"
+			android:id="@+id/fragmentMain"
+			/>
 
 </RelativeLayout>
