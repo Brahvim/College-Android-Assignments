@@ -1,7 +1,9 @@
-package com.brahvim.college_assignments;
+package com.brahvim.college_assignments.front;
 
 import android.app.Activity;
 import android.os.Bundle;
+
+import com.brahvim.college_assignments.R;
 
 public class ActivityMain extends Activity {
 

@@ -5,11 +5,11 @@
 		xmlns:tools="http://schemas.android.com/tools"
 		android:layout_height="match_parent"
 		android:layout_width="match_parent"
-		tools:context=".ActivityMain"
+		tools:context=".front.ActivityMain"
 		>
 	
 	<fragment
-			android:name="com.brahvim.college_assignments.FragmentMain"
+			android:name="com.brahvim.college_assignments.front.FragmentMain"
 			android:layout_height="match_parent"
 			android:layout_width="match_parent"
 			android:id="@+id/fragmentMain"

@@ -1,5 +1,7 @@
 <resources>
 	
 	<string name="app_name">App</string>
+	<string name="textButtonAddTaskFragmentMain">Add Task!</string>
+	<string name="hintListElement">This is a <i>List Item!</i></string>
 
 </resources>
